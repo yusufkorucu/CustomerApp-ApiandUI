@@ -3,13 +3,23 @@
 .Net 7 Mvc UI
 
 CQRS Patttern
+
 Repository 
+
 EntityFramework
+
 Mssql
+
 FluentValidation
+
 AutoMapper
+
 InMemoryCache
+
 SwaggerUı
-Loggin
+
+Logging
+
 JWT(Json Web Token)
+
 Connected Service - > KOPS  service
