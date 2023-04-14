@@ -1,0 +1,245 @@
+.leftBar {
+    background-color: rgb(0, 109, 252);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    font-size: 20px;
+}
+
+.rightBar form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100vh;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.formContainer {
+    width: 40%;
+    margin-left: 20px;
+}
+
+.btnContainer {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+/* MENU SECTION */
+
+.leftBar ul {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftBar li {
+    list-style: none;
+}
+
+    .leftBar li a {
+        font-size: 45px;
+        color: white;
+        text-decoration: none;
+    }
+
+.item {
+    min-height: 50px;
+}
+
+.itemName {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    min-width: 15%;
+    max-height: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+    .itemName span {
+        min-height: 30px;
+        width: 100%;
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #000;
+    }
+
+.itemDesc {
+    width: 55%;
+    display: block;
+}
+
+    .itemDesc span {
+        min-height: 30px;
+        width: 100%;
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #000;
+        padding: 0 10px;
+        padding-top: 10px;
+    }
+
+.itemButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 30%;
+    max-height: 100px;
+}
+
+.border-right {
+    border-right: 1px solid #0000002f;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #00000009;
+}
+/* MENU SECTION */
+
+@media only screen and (max-width: 768px) {
+    .leftBar {
+        height: 0vh;
+    }
+
+    .rightBar form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+    }
+
+    .formContainer {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .rightBar form {
+        margin-left: 0px;
+        padding: 50px;
+    }
+
+    .itemDesc {
+        width: 45%;
+    }
+
+    .itemName {
+        min-width: 25%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .mobileMenu {
+        display: flex !important;
+        padding-top: 10px;
+        border-top: 1px solid #00000014;
+    }
+
+    .search {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+.mobileMenu {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+    .mobileMenu .col-4 {
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .mobileMenu .col-4 a {
+            text-decoration: none;
+            color: black;
+            font-size: 17px;
+        }
+
+    .mobileMenu i {
+        color: rgb(0, 109, 252);
+        font-size: 25px;
+    }
+
+.menu {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    justify-content: start;
+}
+
+    .menu li {
+        margin-right: 30px;
+    }
+
+        .menu li a {
+            color: #002fff91;
+            text-decoration: none;
+            transition-duration: 0.2s;
+        }
+
+            .menu li a:hover {
+                color: #002fff67;
+                text-decoration: none;
+                transition-duration: 0.2s;
+            }
+
+.topBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 22px;
+}
+
+.btn-duzenle {
+    background: #5780b3;
+    color: white;
+    border-radius: 0;
+}
+
+    .btn-duzenle:hover {
+        background: #5d8ac2;
+        color: white;
+        border-radius: 0;
+    }
+
+.btn-sil {
+    background: #c90606;
+    color: white;
+    border-radius: 0;
+}
+
+    .btn-sil:hover {
+        background: #df0808;
+        color: white;
+        border-radius: 0;
+    }

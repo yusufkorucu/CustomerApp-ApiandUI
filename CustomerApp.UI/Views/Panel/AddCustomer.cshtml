@@ -1,0 +1,42 @@
+﻿<form asp-action="addcustomer" asp-controller="panel" method="post"  class="was-validated">
+
+    <div class="row">
+        <div class="col-md-4 mb-3">
+            <label for="Name" class="form-label">Name:</label>
+            <input type="text" required class="form-control" id="Name" placeholder="Enter Name" name="Name" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <label for="LastName" class="form-label">LastName:</label>
+            <input type="text" required class="form-control" id="LastName" placeholder="Enter LastName" name="LastName" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <label for="Tckno" class="form-label">Tckno:</label>
+            <input type="number" required min="10000000000" max="99999999999" class="form-control" id="Tckno" placeholder="Enter Tckno" name="Tckno" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-md-4 mb-3">
+            <label for="BirthDate" class="form-label">BirthDate:</label>
+            <input type="date" required class="form-control" id="BirthDate" placeholder="Enter BirthDate" name="BirthDate" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <label for="Gsm" class="form-label">Phone:</label>
+            <input type="tel" required class="form-control" id="Phone" pattern="[0]{1}[0-9]{10}" placeholder="Enter Phone" name="Phone">
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="col-md-4 mb-3" style="margin-top:2.4%;">
+            <button type="submit" class="form-control btn btn-success">Submit</button>
+        </div>
+    </div>
+
+</form>

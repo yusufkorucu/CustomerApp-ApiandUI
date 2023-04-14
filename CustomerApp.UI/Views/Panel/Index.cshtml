@@ -1,0 +1,51 @@
+﻿@using CustomerApp.Ui.Models;
+@model List<CustomerDetailsDto>
+
+<form asp-action="index" asp-controller="panel" method="post">
+
+    <div class="row">
+        <div class="col-md-3 mb-3">
+            <label for="Name" class="form-label">Name:</label>
+            <input type="text" class="form-control" id="Name" placeholder="Enter Name" name="Name">
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="LastName" class="form-label">LastName:</label>
+            <input type="text" class="form-control" id="LastName" placeholder="Enter LastName" name="LastName">
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="Tckno" class="form-label">Tckno:</label>
+            <input type="number" class="form-control" id="Tckno" placeholder="Enter Tckno" name="Tckno">
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <button style="margin-top:9.9%" type="submit" class="form-control btn btn-success">Search</button>
+        </div>
+    </div>
+</form>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">TCKNO</th>
+            <th scope="col">Name</th>
+            <th scope="col">LastName</th>
+            <th scope="col">BirtDate</th>
+            <th scope="col">Phone</th>
+            <th scope="col">İşlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ToList())
+        {
+            <tr>
+                <th scope="row">@item.Tckno</th>
+                <td>@item.Name</td>
+                <td>@item.LastName</td>
+                <td>@item.BirthDate</td>
+                <td>@item.Phone</td>
+                <td><a class="btn btn-danger" href="/Panel/Delete/@item.Id">Sil</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
