@@ -2,6 +2,7 @@ using CustomerApp.Api.Data;
 using CustomerApp.Api.Handlers.Command;
 using CustomerApp.Api.Handlers.Queries;
 using CustomerApp.Api.Repositories.Customer;
+using CustomerApp.Api.Repositories.GenericRepository;
 using CustomerApp.Api.Security.Encyption;
 using CustomerApp.Api.Security.Jwt;
 using CustomerApp.Api.Services.Abstract;
@@ -34,6 +35,8 @@ builder.Services.AddScoped<IValidator<GetFilteredCustomerQuery>, GetFilteredCust
 builder.Services.AddScoped<IValidator<LoginCommand>, LoginCommandValidator>();
 builder.Services.AddScoped<ITokenHelper, JwtHelper>();
 builder.Services.AddDbContext<CustomerAppDbContext>();
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 builder.Services.AddControllers();
 builder.Services.AddMemoryCache();

@@ -59,7 +59,7 @@ namespace CustomerApp.Api.Services.Concrete
         public async Task<CustomerApiResponse<bool>> DeleteCustomerById(CustomerDeleteCommand command)
         {
 
-            var result = await _customerRepository.DeleteCustomerAsync(command.Id);
+            var result = await _customerRepository.DeleteAsync(command.Id);
 
             return new CustomerApiResponse<bool>(result);
 
