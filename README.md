@@ -1,7 +1,4 @@
-# CustomerApp-ApiandUI
-API
-Swagger UI
-![image](https://user-images.githubusercontent.com/32218432/231970021-7651e529-aaef-41fa-b239-0daf128ddd16.png)
+
 
 
 UI Screens
